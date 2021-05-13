@@ -10,8 +10,7 @@ before_install:
 script:
   - docker run -e CI=true dockmaker54/docker_react npm run test -- --coverage
 
-deploy:
-    
+deploy:    
     provider: elasticbeanstalk
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key:
@@ -23,7 +22,7 @@ deploy:
     bucket_path: 'docker'
     skip_cleanup: true
     on:
-      branches: main
+      branch: main
   
 
 
