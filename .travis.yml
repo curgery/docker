@@ -11,18 +11,19 @@ script:
   - docker run -e CI=true dockmaker54/docker_react npm run test -- --coverage
 
 deploy:
-  provider: elasticbeanstalk
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: "$AWS_SECRET_KEY" 
-  region: 'us-east-1'
-  app: 'docker_react'
-  env: 'Dockerreact-env'
-  bucket_name: 'elasticbeanstalk-us-east-1-083020474640'
-  bucket_path: 'docker'
-  skip_cleanup: true
-  on:
-    branches: main
+    
+    provider: elasticbeanstalk
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key:
+      secure: "$AWS_SECRET_KEY" 
+    region: 'us-east-1'
+    app: 'docker_react'
+    env: 'Dockerreact-env'
+    bucket_name: 'elasticbeanstalk-us-east-1-083020474640'
+    bucket_path: 'docker'
+    skip_cleanup: true
+    on:
+      branches: main
   
 
 
