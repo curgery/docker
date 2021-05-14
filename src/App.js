@@ -4,7 +4,9 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>Travis CI/AWS, Hello!</p>
+        <p>
+          Attempting to prompt a Compare & Pull Request Travis CI/AWS, Hello!
+        </p>
         <a
           className='App-link'
           href='https://reactjs.org'
