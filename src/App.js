@@ -4,15 +4,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>Travis CI/AWS, Hello!</p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
+        <p>Travis CI/AWS, Hello!</p>I was changed on the Feature branch
       </header>
     </div>
   );
