@@ -8,4 +8,13 @@ before_install:
 script:
   - docker run dockmaker54/docker npm run test -- --coverage
 
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-react"
+  env: "Docker-env"
+  bucket_name: "elasticbeanstalk-us-east-1-306476627547"
+  bucket_path: "docker-react"
+  on:
+    branch: main
   
