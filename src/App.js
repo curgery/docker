@@ -4,7 +4,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>RLG Mobile Mobile Applications -Travis CI/AWS</p>
+        <p>RLG Mobile Applications -Travis CI/AWS</p>
         <a
           className='App-link'
           href='https://reactjs.org'
