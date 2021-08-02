@@ -5,17 +5,17 @@ services:
   - docker
 
 before_install:
-  - docker build -t dockmaker54/docker -f Dockerfile.dev .
+  - docker build -t dockmaker54/frontend -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true dockmaker54/docker npm run test -- --coverage
+  - docker run -e CI=true dockmaker54/frontend npm run test -- --coverage
 
 deploy:    
     provider: elasticbeanstalk
     region: 'us-east-1'
     app: 'docker_react'
     env: 'Dockerreact-env'
-    bucket_name: 'eelasticbeanstalk-us-east-1-083020474640'
+    bucket_name: 'elasticbeanstalk-us-east-1-083020474640'
     bucket_path: 'docker_react'
     on:
       branch: main
