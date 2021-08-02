@@ -5,7 +5,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <p>
-          Attempting to prompt a Compare & Pull Request Travis CI/AWS, Hello!
+          RLG Enterprises LLC.....git sync test
         </p>
         <a
           className='App-link'
